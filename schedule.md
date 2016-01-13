@@ -5,10 +5,10 @@ A week-by-week breakdown of the material.
 ## Week  1 (01/11-1/15)
 
 Day 1
-  ~ TBA
+  ~ Introduction
 
 Day 2
-  ~ TBA
+  ~ [Complex Numbers](notes/complex_numbers.md)
 
 Day 3
   ~ TBA

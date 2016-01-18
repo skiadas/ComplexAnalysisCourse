@@ -8,92 +8,92 @@ Day 1
   ~ Introduction
 
 Day 2
-  ~ [Complex Numbers](notes/complex_numbers.md)
+  ~ [Complex Numbers, algebra](notes/complex_numbers.md)
 
 Day 3
-  ~ TBA
+  ~ [Geometry of the Complex Plane](notes/complex_numbers.md)
 
 ## Week  2 (01/18-01/22)
 
 Day 1
-  ~ TBA
+  ~ [Sequences and Series in the Complex Plane](notes/complex_series.md)
 
 Day 2
-  ~ TBA
+  ~ [Topology of the Complex Plane](notes/complex_topology.md)
 
 Day 3
-  ~ TBA
+  ~ Continuous functions, uniform convergence
 
 ## Week  3 (01/25-01/29)
 
 Day 1
-  ~ TBA
+  ~ Analytic Polynomials
 
 Day 2
-  ~ TBA
+  ~ Differentiable Functions
 
 Day 3
-  ~ TBA
+  ~ Power Series
 
 ## Week  4 (02/01-02/05)
 
 Day 1
-  ~ TBA
+  ~ Differentiability of Power Series
 
 Day 2
-  ~ TBA
+  ~ Cauchy-Riemann Equations, Analytic functions
 
 Day 3
-  ~ TBA
+  ~ Extensions of standard functions
 
 ## Week  5 (02/08-02/12)
 
 Day 1
-  ~ TBA
+  ~ Line Integrals
 
 Day 2
-  ~ TBA
+  ~ Line Integrals, cont
 
 Day 3
-  ~ TBA
+  ~ Line Integrals and antiderivatives
 
 ## Week  6 (02/15-02/19)
 
 Day 1
-  ~ TBA
+  ~ **Midterm 1**
 
 Day 2
-  ~ TBA
+  ~ Closed Curve Theorem
 
 Day 3
-  ~ TBA
+  ~ Cauchy Integral Formula
 
 ## Week  7 (02/22-02/26)
 
 Day 1
-  ~ TBA
+  ~ Taylor Expansion for entire functions
 
 Day 2
-  ~ TBAas tangent vector.
+  ~ Louisville Theorem, Fundamental Theorem of Algebra
 
 Day 3
-  ~ TBA
+  ~ Power Series for analytic functions on a disc
 
 ## Week  8 (03/07-03/11)
 
 Day 1
-  ~ TBA
+  ~ Mean Value Theorem
 
 Day 2
-  ~ TBA
+  ~ Maximum Modulus Theorem
 
 Day 3
-  ~ TBA
+  ~ Schwartz's Lemma
 
 ## Week  9 (03/14-03/18)
 
 Day 1
-  ~ TBA
+  ~ Morera's Theorem
 
 Day 2
   ~ TBA
@@ -107,7 +107,7 @@ Day 1
   ~ TBA
 
 Day 2
-  ~ TBA
+  ~ **Midterm 2**
 
 Day 3
   ~ TBA

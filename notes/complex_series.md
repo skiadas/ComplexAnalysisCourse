@@ -17,9 +17,12 @@ Practice problems:
 ## Topics to know
 
 1. Sequence $z_n$ converges to $z$ iff $|z_n - z|\to 0$.
+    - Alternative definition
+    - Laws for convergent sequences
 2. Sequence converges if and only if its real parts converge and its imaginary parts converge.
     - Key inequality: $|\textrm{Re(z)}|,|\textrm{Im(z)}|\leq |z|\leq |\textrm{Re(z)}| + |\textrm{Im(z)}|$
 3. Cauchy sequences, for both real numbers and imaginary numbers.
+    - Laws for Cauchy sequences
 4. Convergent sequences are Cauchy.
 5. Cauchy sequences of real numbers converge. Key steps:
     - Cauchy sequences are bounded.
@@ -28,8 +31,9 @@ Practice problems:
 6. Cauchy sequences of complex numbers converge.
     - Go through their real/imaginary parts.
 7. Series of complex numbers. Review of results from Calculus 3.
+    - Which proofs carry over to complex numbers?
     - Divergence test.
     - Absolute/conditional convergence.
-    - Absolute convergence implies conditional convergence. (proof differs)
+    - Absolute convergence implies conditional convergence. (proof differs, why?)
     - Geometric series.
     - Root and ratio tests.

@@ -8,7 +8,7 @@ Section 1.4, part I
 
 Practice problems:
 
-1. Show that $z_n\to z$ if and only if $\bar z_n\to bar z$.
+1. Show that $z_n\to z$ if and only if $\bar z_n\to \bar z$.
 2. Suppose that $|z| < 1$. Show that $a_n = z^n\to 0$.
 3. True or False: The series $\sum_{n=0}^\infty a_n$ converges if and only if the series $\sum_{n=0}^\infty \textrm{Re}(a_n)$ and $\sum_{n=0}^\infty \textrm{Im}(a_n)$ both converge.
 4. True or False: If $\sum_{n=0}^\infty a_n$ converges then $\sum_{n=0}^\infty \bar a_n$ also converges.

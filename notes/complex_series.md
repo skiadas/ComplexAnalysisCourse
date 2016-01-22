@@ -21,12 +21,12 @@ Practice problems:
     - Laws for convergent sequences
 2. Sequence converges if and only if its real parts converge and its imaginary parts converge.
     - Key inequality: $|\textrm{Re(z)}|,|\textrm{Im(z)}|\leq |z|\leq |\textrm{Re(z)}| + |\textrm{Im(z)}|$
-3. Cauchy sequences, for both real numbers and imaginary numbers.
+3. Cauchy sequences, for both real numbers and complex numbers.
     - Laws for Cauchy sequences
 4. Convergent sequences are Cauchy.
 5. Cauchy sequences of real numbers converge. Key steps:
     - Cauchy sequences are bounded.
-    - Cauchy sequences contain a monotone subsequence.
+    - Any sequence contains a monotone subsequence.
     - If a Cauchy sequence has a convergent subsequence it converges.
 6. Cauchy sequences of complex numbers converge.
     - Go through their real/imaginary parts.

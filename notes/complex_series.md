@@ -27,13 +27,17 @@ Practice problems:
 5. Cauchy sequences of real numbers converge. Key steps:
     - Cauchy sequences are bounded.
     - Any sequence contains a monotone subsequence.
-    - If a Cauchy sequence has a convergent subsequence it converges.
+        - Key statement: There is an $N$ such that for all $M\geq N$ there is a $K\geq M$ such that $a_K\geq a_M$.
+        - If that is true, then can build an increasing subsequence.
+        - If it is false, then we can build a decreasing subsequence.
+    - If a Cauchy sequence has a convergent subsequence then it converges.
 6. Cauchy sequences of complex numbers converge.
     - Go through their real/imaginary parts.
-7. Series of complex numbers. Review of results from Calculus 3.
-    - Which proofs carry over to complex numbers?
+7. Series of complex numbers. Review of results from Calculus 3. How do they carry over to complex numbers?
+    - Definition of Convergent Series.
     - Divergence test.
-    - Absolute/conditional convergence.
-    - Absolute convergence implies conditional convergence. (proof differs, why?)
     - Geometric series.
+    - Definition of absolute/conditional convergence.
+    - Alternating series test.
+    - Absolute convergence implies conditional convergence.
     - Root and ratio tests.

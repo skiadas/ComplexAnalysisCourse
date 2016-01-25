@@ -19,43 +19,43 @@ Day 1
   ~ [Sequences and Series in the Complex Plane](notes/complex_series.md)
 
 Day 2
-  ~ [Topology of the Complex Plane](notes/complex_topology.md)
+  ~ [Cauchy sequences](notes/complex_series.md)
 
 Day 3
-  ~ Continuous functions, uniform convergence
+  ~ [Cauchy sequences](notes/complex_series.md)
 
 ## Week  3 (01/25-01/29)
 
 Day 1
-  ~ Analytic Polynomials
+  ~ [Series results from Calc 3](notes/complex_series.md)
 
 Day 2
-  ~ Differentiable Functions
+  ~ [Series results from Calc 3](notes/complex_series.md)
 
 Day 3
-  ~ Power Series
+  ~ [Topology of the Complex Plane](notes/complex_topology.md)
 
 ## Week  4 (02/01-02/05)
 
 Day 1
-  ~ Differentiability of Power Series
+  ~ Continuous functions
 
 Day 2
-  ~ Cauchy-Riemann Equations, Analytic functions
+  ~ Analytic Polynomials
 
 Day 3
-  ~ Extensions of standard functions
+  ~ Differentiable Functions
 
 ## Week  5 (02/08-02/12)
 
 Day 1
-  ~ Line Integrals
+  ~ Power Series
 
 Day 2
-  ~ Line Integrals, cont
+  ~ Differentiability of Power Series
 
 Day 3
-  ~ Line Integrals and antiderivatives
+  ~ Cauchy-Riemann Equations, Analytic functions
 
 ## Week  6 (02/15-02/19)
 
@@ -63,54 +63,54 @@ Day 1
   ~ **Midterm 1**
 
 Day 2
-  ~ Closed Curve Theorem
+  ~ Extensions of standard functions
 
 Day 3
-  ~ Cauchy Integral Formula
+  ~ Line Integrals
 
 ## Week  7 (02/22-02/26)
 
 Day 1
-  ~ Taylor Expansion for entire functions
+  ~ Line Integrals, cont
 
 Day 2
-  ~ Louisville Theorem, Fundamental Theorem of Algebra
+  ~ Line Integrals and antiderivatives
 
 Day 3
-  ~ Power Series for analytic functions on a disc
+  ~ Closed Curve Theorem
 
 ## Week  8 (03/07-03/11)
 
 Day 1
-  ~ Mean Value Theorem
+  ~ Cauchy Integral Formula
 
 Day 2
-  ~ Maximum Modulus Theorem
+  ~ Taylor Expansion for entire functions
 
 Day 3
-  ~ Schwartz's Lemma
+  ~ Louisville Theorem, Fundamental Theorem of Algebra
 
 ## Week  9 (03/14-03/18)
 
 Day 1
-  ~ Morera's Theorem
+  ~ Power Series for analytic functions on a disc
 
 Day 2
-  ~ TBA
+  ~ Mean Value Theorem
 
 Day 3
-  ~ TBA
+  ~ Maximum Modulus Theorem
 
 ## Week 10 (03/21-03/25)
 
 Day 1
-  ~ TBA
+  ~ Schwartz's Lemma
 
 Day 2
   ~ **Midterm 2**
 
 Day 3
-  ~ TBA
+  ~ Morera's Theorem
 
 ## Week 11 (03/28-04/01)
 

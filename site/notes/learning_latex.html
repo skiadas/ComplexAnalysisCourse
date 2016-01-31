@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="learning-latex">Learning LaTeX</h1>
+<p>LaTex, pronounced “lay-tech”, is a typesetting software particularly suitable for scientific writing. Some of its key features are:</p>
+<ol style="list-style-type: decimal">
+<li>Excellent support for properly writing mathematical equations.</li>
+<li>Advanced algorithms for spacing between words, lines and sentences to properly justify text without leaving unnecessarily large spaces and to provide suitable page breaks.</li>
+<li>You focus on writing your content and identifying its structural importance, and the formatting is taken care of uniformly through global settings.</li>
+<li>In LaTeX you control a lot of the behavior via “commands”, that all start with a backslash, <code>\</code>.</li>
+<li>LaTeX is not a “what-you-see-is-what-you-get” editor. You end up sort of writing “code” intermingled with text. Lots of tools like <a href="overleaf.com">OverLeaf</a> make that a bit more palatable. The programming language that LaTeX supports is strong enough to compute for instance prime numbers, though few people use those advanced features.</li>
+<li>The final format is typically a PDF file.</li>
+</ol>
+<h2 id="starting-a-file">Starting a file</h2>
+<p>We will be using <a href="overleaf.com">OverLeaf</a>, that offers an easily accessible interface to LaTeX. If you would rather install software on your computer to work with LaTeX, contact me and we’ll see what we can arrange.</p>
+<p>We will work through many of the things you will need in this document. There are many online resources as well. The documents at <a href="https://www.sharelatex.com/learn/">this page</a> that don’t refer specifically to ShareLaTeX features are well organized and relevant to us. And you should always feel free to ask me if you are not sure how to do something.</p>
+<ol style="list-style-type: decimal">
+<li>You should all already have OverLeaf accounts (there is a free option), go ahead and log in.</li>
+<li>You should see an option “MyProjects” near the top, select it. Then click on “new project”. It should offer you a choice of templates to work with, for now we will go with the “Blank Paper” template that is the first item in Basics. This will start a new file for you with nothing in it.</li>
+<li>You should see two windows. The left side is where we write stuff, and the write sides shows us what it looks like. You can use the arrows near the dividing line to expand one of the two sides to full screen. You can also drag the dividing line left or right to change the size of each section.</li>
+<li>LaTeX documents have two main parts, the <strong>preamble</strong> and the <strong>main document</strong>. The preamble is used to provide instructions to the system. The main document is where you put the text you want to have show up.</li>
+</ol>
+<h2 id="preamble">Preamble</h2>
+<p>In the blank document, add the following:</p>
+<pre><code>\documentclass[12pt]{article}
+\usepackage[vmargin=0.5in, hmargin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{stix}
+
+\usepackage{paralist}
+\usepackage{attrib}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\title{Place your title here}
+\author{Put your name here}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Some text here
+\end{document}</code></pre>
+<p>If all has worked well, you should see on the right-side a rendering of your document, showing the title, the name and some text. Everything else is invisible but gives instructions to the system for various things. We will discuss them in a minute.</p>
+<h3 id="document-classes-and-packages">Document classes and packages</h3>
+<p>The content between the lines <code>\begin{document}</code> and <code>\end{document}</code> is the “main document”. This is where you will be putting most of your work. The stuff that comes earlier is the preamble.</p>
+<p>The first line in the document is always a <code>\documentclass</code> line. In this case it tells the system that it should use the format rules for an article, which specifies title size, author and date placement, and other stylistic choices. In this case we also tell it that we want the base font size to be 12 points. Unfortunately you do not have too many options for the font size 12 points is the largest that it can go.</p>
+<p>Then we have a couple of <code>\usepackage</code> commands that load packages that do useful things. The first one is the “geometry” package, which allows you to control the margins of the page. Try to change the numbers to see the effect. “hmargin” is for horizontal margins, “vmargin” controls vertical margins. You can use different measuring units rather than inches, for instance <code>1cm</code> will create 1 centimeter spacing. All this information within the square brackets is called the “package options”.</p>
+<p>Notice a bit further down a <code>\usepackage{paralist}</code>. This allows us to customize lists later on. And <code>\usepackage{attrib}</code> allows attributions in quotes, if you ever need those.</p>
+<h3 id="fonts">Fonts</h3>
+<p>The next two lines set up an appropriate font, in this case a font called Stix. I encourage you not to do this right now, but you can find a long list of available fonts as well as the instructions for how to enable them <a href="http://www.tug.dk/FontCatalogue/">here</a>. Aim for the section that says “Fonts with math support”. You can only have one font choice per document, without a fair bit of extra work.</p>
+<p>You will find that LaTeX makes some things hard. For instance, if you want different parts of your text to have different fonts, it is not easy to do. LaTeX aims to provide you uniform styles, and gives you control over setting those uniform styles, but doesn’t allow you to deviate a lot. The main stylistic choices you have are:</p>
+<ol style="list-style-type: decimal">
+<li>Normal text. This is what happens most of the time. You can also use <code>\textrm{normal text here}</code> in situations where normally typing text would not treat it as normal.</li>
+<li>Italic text, indicated by the command <code>\emph{put the text you want italic here}</code>. It will also automatically enable italic text in certain settings like theorem statements, depending on the document class setting. In those instances, the above command will make the text in it normal, i.e. it always makes it “stand out from its surrounding text”. You can also use <code>\textit{italic text here}</code>.</li>
+<li>Bold text, indicated by the command <code>\textbf{put the text you want bold here}</code>.</li>
+<li>Math mode. We will discuss this later, but you can enter a math mode where normal text rules are suspended. A specific math font is used in those instances.</li>
+</ol>
+<h3 id="document-info">Document info</h3>
+<p>After the font specifications there are a couple of lines that define information about the document, in this case a title, the author, and a date specification to automatically pick up today’s date. You could just instead write out a specific date as you want it to appear, instead of <code>\today</code>.</p>
+<p>There are many more things we can put in the preamble. But for now this will suffice.</p>
+<h2 id="the-main-document">The main document</h2>
+<p>The main document is contained within the block created by the <code>\begin{document}</code> and <code>\end{document}</code>. Everything you type there is going to appear as text on the right, but there are some important rules to keep in mind:</p>
+<ol style="list-style-type: decimal">
+<li>Backslashes and curly braces have special meaning, as do dollar signs. If you need to insert any of those into the text for some reason, you need to prepend them with a backslash, for instance <code>\{</code> or <code>\$</code> or <code>\\</code>.</li>
+<li>Multiple spaces are ignored and treated as one space. LaTeX automatically adjusts the spacing between words to achieve the best possible result, including extra spaces after the ends of sentences.</li>
+<li><p>Newlines are ignored, unless there are at least 2 of them back to back. So in order to start a new paragraph you have to hit “return” twice. Like so:</p>
+<pre><code>A paragraph here
+
+A new paragraph here</code></pre></li>
+<li>There are special ways for creating section headings and for creating itemized or enumerated lists. We will be discussing these shortly.</li>
+<li><p>There are two ways to enter “math mode”. We will also be discussing theses shortly. All your mathematics should be done in this mode.</p></li>
+</ol>
+<h3 id="sections">Sections</h3>
+<p>There are special commands to use when you want to start a new section, subsection etc. For articles, the options we have are <em>section</em>, <em>subsection</em>, <em>subsubsection</em>, <em>paragraph</em> and <em>subparagraph</em>. Each of these has a corresponding command, with a backslash in front, and then in braces you put the name of the section. So here is some example text, type (or copy-paste) it in and see how it looks:</p>
+<pre><code>\section{This is a section heading}
+Stuff about the first section in here. The settings for how these headings appear are set globally, and you should not try to change them.
+\subsection{A subsection within the first section}
+Stuff about the subsection. Notice that the subsection is numbered within the section.
+\subsection*{An unnumbered subsection}
+You can disable the numbering on any of these elements by putting the star before the curly brace like in the line above.
+\subsubsection{A sub-subsection}
+Subsubsection text.
+\paragraph{A paragraph}
+Some paragraph text. Notice that paragraphs and subparagraphs do not follow the numbering.
+
+&quot;Paragraph&quot; here just means a part of the text identified as a unit smaller than a subsubsection. It does not need to be a literal paragraph. But it is convenient to use for paragraphs that have a &quot;title&quot;.
+\subparagraph{A subparagraph}
+Subparagraph text.
+You really do not need to use all those 5 different levels. But they are available.</code></pre>
+<h3 id="lists">Lists</h3>
+<p>There are three kinds of lists you can make in LaTeX: Numbered (enumerated) lists, itemized (“bullet”) lists and “description lists”. Here’s some examples, paste them in the text to see how they would look:</p>
+<pre><code>Lists start and end with a begin-end block:
+\begin{enumerate}
+    \item This is the first item in the list. Notice that the numbering started automatically at 1. You can customize that if you need to, but you should not have to. We will now start a sublist within this first item: We indented it a bit to remind us of the fact that it&#39;s a sublist, but LaTeX won&#39;t care either way.
+   \begin{enumerate}
+      \item Here&#39;s a subitem.
+      \item Another subitem.
+   \end{enumerate}
+   We will now make another sublist that is formatted slightly differently. Notice the i and dot, telling it to use latin numerals and a dot instead of a parenthesis:
+   \begin{enumerate}[i.]
+      \item First!
+      \item Second!
+      \item[Hey!] You can interrupt the numbering by inserting whatever you want in brackets, and it will replace the number. But use this sparringly.
+   \end{enumerate}
+   \item Here&#39;s a second item on the main list.
+   \begin{itemize}
+      \item And here&#39;s a bullet list.
+      \begin{itemize}
+         \item And one inside it.
+      \end{itemize}
+      \item A second item.
+   \end{itemize}
+   You can also make lists with less space between the items:
+   \begin{compactenum}
+      \item See.
+      \item We&#39;re close!
+      \item you can also try replacing &quot;compactenum&quot; at the begin/end with &quot;asparaenum&quot; and &quot;inparaenum&quot; and see how they look like.
+      \item You also have the choices of &quot;compactitem&quot;, &quot;asparaitem&quot;, &quot;inparaitem&quot;.
+   \end{compactenum}
+\end{enumerate}
+
+Description lists expect each item to have a &quot;term&quot; and a &quot;description&quot; like so:
+\begin{description}
+\item[A term] The term&#39;s description.
+\item[Another] They are formatted this way.
+\end{description}
+You can also try &quot;compactdesc&quot;, &quot;asparadesc&quot; and &quot;inparadesc&quot;.</code></pre>
+<h3 id="quotes">Quotes</h3>
+<p>If you want to suggest a “quote”, there are two possible “environments”, quote and quotation. Paste the following in to see their difference:</p>
+<pre><code>Quote:
+\begin{quote}
+A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line.
+\attrib{The author}
+
+Starting a new paragraph. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line.
+\end{quote}
+Quotation:
+\begin{quotation}
+A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line.
+\attrib{The author}
+
+Starting a new paragraph. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line. A long text here to make sure we move to a new line.
+
+\end{quotation}</code></pre>
+<h3 id="other-normal-text-features">Other normal text features</h3>
+<p>Here are some other features when writing “normal” text. Just paste them in and see the effect:</p>
+<pre><code>Use two backticks ``to start a left double-quote, and two single quotes to close it&#39;&#39;. This will insert better looking quotes than if you use the &quot;normal double-quote&quot; character. Do the same for `single quotes&#39;.
+
+Using consecutive dashes has the effect of producing what is known as an &quot;en-dash&quot; (--) or an &quot;em-dash&quot; (---).</code></pre>
+<h3 id="theorems-corollaries-proofs">Theorems, corollaries, proofs</h3>
+<p>There are a number of provided environments for creating standard math document sections like a theorem statement, a proof and so on. Most of these were loaded with the “amsthm” package that was loaded at the preamble. Here’s some example uses. You can read a lot more about what this package provides at its <a href="ftp://ftp.ams.org/pub/tex/doc/amscls/amsthdoc.pdf">documentation page</a>, but we’ll discuss the main things you’ll need in these notes, and the next section which focuses on writing math.</p>
+<p>You should first add the following lines to the preamble, below the <code>\usepackage{amsthm}</code> line:</p>
+<pre><code>\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]</code></pre>
+<p>The lines above created 5 new environments:</p>
+<ol style="list-style-type: decimal">
+<li><code>theorem</code>, which prints “Theorem” and is numbered within sections.</li>
+<li><code>lemma</code> and <code>corollary</code>, which both follow the theorem’s numbering.</li>
+<li><code>remark</code> and <code>note</code>, both unnumbered.</li>
+</ol>
+<p>Here’s an example of using these. Paste it in the main document section to see how it looks. You also will see how we can add a “proof” with the special nice box at the end.</p>
+<pre><code>\begin{theorem}
+Here&#39;s the theorem&#39;s statement. Notice the numbering, which is based on the section number.
+\end{theorem}
+\begin{proof}
+Here is where we would write the proof.
+
+This could take many pages. We will learn how to put math here in the next section.
+\end{proof}
+\begin{corollary}
+See how the numbering of this corollary follows the theorem&#39;s numbering.
+\end{corollary}
+\begin{lemma}
+Lemmas also follow the numbering from theorem.
+\end{lemma}
+\begin{proof}
+And here&#39;s the lemma&#39;s proof.
+\end{proof}
+Now let&#39;s add a remark:
+\begin{remark}
+Here is the remark&#39;s text. Notice how the remarks are formatted differently than the previous items. That is because we had a line about a different &quot;theoremstyle&quot; in the preamble where we defined the remark environment.
+\end{remark}
+\begin{definition}
+And here is a definition. Notice that its style is different from both of the previous two style. And it follows an independent numbering from the theorems lemmas etc, but still below sections.
+\end{definition}</code></pre>
+<h3 id="mathematics">Mathematics</h3>
+<p>Now we discuss how to write mathematics in LaTeX, one of its main strengths. There are two different math modes:</p>
+<ul>
+<li><em>inline math</em> mode, which you use to add math within normal text. You can start math mode by <code>\(</code> and close it by <code>\)</code>. You can also use one dollar sign to open and close, but you should use the backslashed parentheses instead.</li>
+<li><em>display math</em> mode, which you use for equations that are not meant to be in the middle of text but their own. You typically start and end display math mode by typing <code>\[</code> and <code>\]</code>. There are also other ways to create more complicated math environments, as well as ways to number the equations for later reference.</li>
+</ul>
+<p>A lot of things are different in either math mode:</p>
+<ul>
+<li>Text has a different meaning. Putting letters next to each other does not make them form words; they are instead treated as the individual variables that are multiplied together.</li>
+<li>All spaces are basically ignored. spacing in math formulas is automatically controlled by the system. There are a few ways to manipulate it if you really feel you need the space, ask me about it if you do.</li>
+<li>Use an underscore to indicate a subscript and a “hat” <code>^</code> to indicate superscripts. If you want to put more than one character as subscript or superscript, enclose it in curly braces. In general curly braces group together things you want to treat as “one”.</li>
+<li>There are numerous commands for producing special symbols. You can find many of them in the <a href="ftp://ftp.ams.org/pub/tex/doc/amsmath/amsldoc.pdf">amsmath documentation</a> and the <a href="http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf">comprehensive LaTeX symbol list</a>. In the sample below we will demonstrate the most common ones. If you can’t find a symbol, just ask.</li>
+<li>If you really need to add some plain text in a math equation, use <code>\textrm{...}</code>.</li>
+</ul>
+<p>Here’s some sample text. Paste it in to see how it looks:</p>
+<pre><code>Here&#39;s an inline equation: \( e^{x + \frac{2}{x}} \).
+Here&#39;s some display math:
+\[
+   \cos x + i \sin x
+\]
+You can create numbered equations by using the equation environment. Also notice the use of left and right commands around the parentheses, which makes them enlarge to the correct size to match their content:
+\begin{equation}\label{eqn:important}
+\sum_{i=1}^n \cos\left(x + \frac{1}{x^2+1}\right) &gt; \prod_{i}^{i\leq 5} a_i b_i
+\end{equation}
+We also created a &quot;label&quot;. What that does is store the number that the equation has. We can then automatically insert it in the text by saying something like: equation~\eqref{eqn:important} is useful or just~\ref{eqn:important}. if you don&#39;t want the parentheses. You can do the same thing on theorems, for example we can refer to theorem~\ref{thm:coolTheorem} below:
+\begin{theorem}\label{thm:coolTheorem}
+A cool theorem whose number we can reference!
+\end{theorem}
+There is a special environment for aligned equations. The ampersand indicates the place where things should align vertically (often the equals sign), while the double backslash at the end of a line indicates that a new line should start:
+\begin{align*}
+y &amp;= x + 3\\
+  &amp;= 5 + 4 = 2
+\end{align*}</code></pre>
+<p>There are lots of other possibilities. Just ask if you want to do something and you’re not quite sure how to do it!</p>
+</body>
+</html>

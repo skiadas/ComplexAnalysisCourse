@@ -5,3 +5,4 @@ Course website for MAT 461 Advanced Seminar: Complex Analysis at [Hanover Colleg
 
 - [Syllabus](syllabus.md)
 - [Schedule](schedule.md)
+- [Learning LaTeX](notes/learning_latex.md)

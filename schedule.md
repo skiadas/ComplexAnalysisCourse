@@ -43,21 +43,21 @@ Day 1
     [Assignment 1](notes/assignment1.md) due Friday, February 12
 
 Day 2
-  ~ [Topology of the Complex Plane](notes/complex_topology.md)
+  ~ [Topology of the Complex Plane: Open and Closed sets](notes/complex_topology.md)
 
 Day 3
-  ~ Continuous functions
+  ~ [Continuous functions and relation to topology](notes/complex_topology.md)
 
 ## Week  5 (02/08-02/12)
 
 Day 1
-  ~ Analytic Polynomials
+  ~ [Compact Sets, Heine-Borel theorem](notes/complex_topology.md)
 
 Day 2
-  ~ Differentiable Functions
+  ~ Analytic Polynomials
 
 Day 3
-  ~ Power Series
+  ~ Differentiable Functions
 
 ## Week  6 (02/15-02/19)
 
@@ -65,65 +65,65 @@ Day 1
   ~ **Midterm 1**
 
 Day 2
-  ~ Differentiability of Power Series
+  ~ Power Series
 
 Day 3
-  ~ Cauchy-Riemann Equations, Analytic functions
+  ~ Differentiability of Power Series
 
 ## Week  7 (02/22-02/26)
 
 Day 1
-  ~ Extensions of standard functions
+  ~ Cauchy-Riemann Equations, Analytic functions
 
 Day 2
-  ~ Line Integrals
+  ~ Extensions of standard functions
 
 Day 3
-  ~ Line Integrals, cont
+  ~ Line Integrals
 
 ## Week  8 (03/07-03/11)
 
 Day 1
-  ~ Line Integrals and antiderivatives
+  ~ Line Integrals, cont
 
 Day 2
-  ~ Closed Curve Theorem
+  ~ Line Integrals and antiderivatives
 
 Day 3
-  ~ Cauchy Integral Formula
+  ~ Closed Curve Theorem
 
 ## Week  9 (03/14-03/18)
 
 Day 1
-  ~ Taylor Expansion for entire functions
+  ~ Cauchy Integral Formula
 
 Day 2
-  ~ Louisville Theorem, Fundamental Theorem of Algebra
+  ~ Taylor Expansion for entire functions
 
 Day 3
-  ~ Power Series for analytic functions on a disc
+  ~ Louisville Theorem, Fundamental Theorem of Algebra
 
 ## Week 10 (03/21-03/25)
 
 Day 1
-  ~ Mean Value Theorem
+  ~ Power Series for analytic functions on a disc
 
 Day 2
   ~ **Midterm 2**
 
 Day 3
-  ~ Maximum Modulus Theorem
+  ~ Mean Value Theorem
 
 ## Week 11 (03/28-04/01)
 
 Day 1
-  ~ Schwartz's Lemma
+  ~ Maximum Modulus Theorem
 
 Day 2
-  ~ Morera's Theorem
+  ~ Schwartz's Lemma
 
 Day 3
-  ~ TBA
+  ~ Morera's Theorem
 
 ## Week 12 (04/04-04/08)
 

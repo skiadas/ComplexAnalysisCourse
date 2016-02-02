@@ -33,29 +33,31 @@ Day 2
   ~ [Series results from Calc 3](notes/complex_series.md)
 
 Day 3
-  ~ [Topology of the Complex Plane](notes/complex_topology.md)
+  ~ [Series results from Calc 3](notes/complex_series.md)
 
 ## Week  4 (02/01-02/05)
 
 Day 1
-  ~ Continuous functions
+  ~ [Series results from Calc 3](notes/complex_series.md)
+
+    [Assignment 1](notes/assignment1.md) due Friday, February 12
 
 Day 2
-  ~ Analytic Polynomials
+  ~ [Topology of the Complex Plane](notes/complex_topology.md)
 
 Day 3
-  ~ Differentiable Functions
+  ~ Continuous functions
 
 ## Week  5 (02/08-02/12)
 
 Day 1
-  ~ Power Series
+  ~ Analytic Polynomials
 
 Day 2
-  ~ Differentiability of Power Series
+  ~ Differentiable Functions
 
 Day 3
-  ~ Cauchy-Riemann Equations, Analytic functions
+  ~ Power Series
 
 ## Week  6 (02/15-02/19)
 
@@ -63,62 +65,62 @@ Day 1
   ~ **Midterm 1**
 
 Day 2
-  ~ Extensions of standard functions
+  ~ Differentiability of Power Series
 
 Day 3
-  ~ Line Integrals
+  ~ Cauchy-Riemann Equations, Analytic functions
 
 ## Week  7 (02/22-02/26)
 
 Day 1
-  ~ Line Integrals, cont
+  ~ Extensions of standard functions
 
 Day 2
-  ~ Line Integrals and antiderivatives
+  ~ Line Integrals
 
 Day 3
-  ~ Closed Curve Theorem
+  ~ Line Integrals, cont
 
 ## Week  8 (03/07-03/11)
 
 Day 1
-  ~ Cauchy Integral Formula
+  ~ Line Integrals and antiderivatives
 
 Day 2
-  ~ Taylor Expansion for entire functions
+  ~ Closed Curve Theorem
 
 Day 3
-  ~ Louisville Theorem, Fundamental Theorem of Algebra
+  ~ Cauchy Integral Formula
 
 ## Week  9 (03/14-03/18)
 
 Day 1
-  ~ Power Series for analytic functions on a disc
+  ~ Taylor Expansion for entire functions
 
 Day 2
-  ~ Mean Value Theorem
+  ~ Louisville Theorem, Fundamental Theorem of Algebra
 
 Day 3
-  ~ Maximum Modulus Theorem
+  ~ Power Series for analytic functions on a disc
 
 ## Week 10 (03/21-03/25)
 
 Day 1
-  ~ Schwartz's Lemma
+  ~ Mean Value Theorem
 
 Day 2
   ~ **Midterm 2**
 
 Day 3
-  ~ Morera's Theorem
+  ~ Maximum Modulus Theorem
 
 ## Week 11 (03/28-04/01)
 
 Day 1
-  ~ TBA
+  ~ Schwartz's Lemma
 
 Day 2
-  ~ TBA
+  ~ Morera's Theorem
 
 Day 3
   ~ TBA

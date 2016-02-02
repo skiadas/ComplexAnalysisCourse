@@ -274,3 +274,15 @@ y &= x + 3\\
 ```
 
 There are lots of other possibilities. Just ask if you want to do something and you're not quite sure how to do it!
+
+### Some standard mathematical symbols
+
+Paste them in and see how they look:
+```
+$\mathbb{C}$
+$\mathbb{N}$
+$\exists x \in A$
+$\forall x\, x > 3 \implies x > 2$
+$x \mapsto f(x)$
+$\alpha \beta \gamma \Gamma$
+```

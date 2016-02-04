@@ -289,6 +289,10 @@ $\alpha \beta \gamma \Gamma$
 
 ### FAQs
 
+- Can I get a table of contents?
+
+    Yes! Just add the line `\tableofcontents` right after the `\maketitle` line. It will automatically update itself as you add sections and subsections.
+
 - How do I do lines over characters (conjugates)?
 
     For a single character, do `\bar z`. For a longer line, do `\overline{...}`

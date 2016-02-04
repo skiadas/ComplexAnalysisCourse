@@ -246,5 +246,17 @@ $\exists x \in A$
 $\forall x\, x &gt; 3 \implies x &gt; 2$
 $x \mapsto f(x)$
 $\alpha \beta \gamma \Gamma$</code></pre>
+<h3 id="faqs">FAQs</h3>
+<ul>
+<li><p>How do I do lines over characters (conjugates)?</p>
+<p>For a single character, do <code>\bar z</code>. For a longer line, do <code>\overline{...}</code></p></li>
+<li><p>How do I include graphics I have made in some other application?</p>
+See this link: <a href="https://www.overleaf.com/help/111-how-do-i-insert-an-image-into-my-document#.VrOBGWQrJcw" class="uri">https://www.overleaf.com/help/111-how-do-i-insert-an-image-into-my-document#.VrOBGWQrJcw</a>. The important parts are:
+<ol style="list-style-type: decimal">
+<li>upload your file in the project</li>
+<li>add the line <code>\usepackage{graphicx}</code> in the preamble if it’s not already there</li>
+<li>Use something like <code>\includegraphics[width=\textwidth]{YOUR-FILE-NAME-HERE}</code> where you want the file to be inserted. You can also use <code>0.8\textwidth</code> if you want it to take up 80% of the text’s width, or you can insert a precise measure like <code>2.4in</code>.</li>
+</ol></li>
+</ul>
 </body>
 </html>

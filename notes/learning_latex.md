@@ -286,3 +286,16 @@ $\forall x\, x > 3 \implies x > 2$
 $x \mapsto f(x)$
 $\alpha \beta \gamma \Gamma$
 ```
+
+### FAQs
+
+- How do I do lines over characters (conjugates)?
+
+    For a single character, do `\bar z`. For a longer line, do `\overline{...}`
+
+- How do I include graphics I have made in some other application?
+
+    See this link: [https://www.overleaf.com/help/111-how-do-i-insert-an-image-into-my-document#.VrOBGWQrJcw](https://www.overleaf.com/help/111-how-do-i-insert-an-image-into-my-document#.VrOBGWQrJcw). The important parts are:
+    1. upload your file in the project
+    2. add the line `\usepackage{graphicx}` in the preamble if it's not already there
+    3. Use something like `\includegraphics[width=\textwidth]{YOUR-FILE-NAME-HERE}` where you want the file to be inserted. You can also use `0.8\textwidth` if you want it to take up 80% of the text's width, or you can insert a precise measure like `2.4in`.

@@ -16,14 +16,20 @@ Practice problems:
 6. An "open rectangle" $(a,b)\times (c,d)$ is defined as all complex numbers whose real part is between $a$ and $b$ and whose imaginary part is between $c$ and $d$. Show that the open rectangle is in fact an open set.
 7. Show that the "closed rectangle" is in fact a closed set.
 8. True or False: A set can be both open and closed at the same time.
-9. Suppose $f\colon\mathbb{C}\to\mathbb{C}$ is continuous, and $U\subset\mathbb{C}$ is set. Recall the definition of the set $f^{-1}(U) = \left\{ x\mid f(x)\in U\right\}$, which makes sense regardless of whether $f$ is an invertible function. Show that if $U$ is an open set then $f^{-1}(U)$ is an open set. (Use $\epsilon-\delta$ definition of continuity)
-10. Show that if $f$ is continuous and $K$ is a closed set then $f^{-1}(K)$ is closed.
-11. Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $U$ that is open but such that $f(U)$ is not open.
-12. Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $K$ that is closed but such that $f(K)$ is not closed. (It will have to be an unbounded set)
-13. Show that if $f$ is continuous and $K$ is a compact set then $f(K)$ is a compact set. (use definition via sequences)
+9. Suppose $U$ is an open set, $z_n$ a sequence, $z_n\to z$ and $z\in U$. Show that there is an $N$ such that for all $n\geq N$ we have $z_n\in U$.
+10. Show that an open set does not contain any of its boundary points.
+11. Show that a closed set contains all of its boundary points.
+12. Show that a single point is a closed set.
+13. Suppose $f\colon\mathbb{C}\to\mathbb{C}$ is continuous, and $U\subset\mathbb{C}$ is set. Recall the definition of the set $f^{-1}(U) = \left\{ x\mid f(x)\in U\right\}$, which makes sense regardless of whether $f$ is an invertible function. Show that if $U$ is an open set then $f^{-1}(U)$ is an open set. (Use $\epsilon-\delta$ definition of continuity)
+14. Show that if $f$ is continuous and $K$ is a closed set then $f^{-1}(K)$ is closed.
+15. Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $U$ that is open but such that $f(U)$ is not open.
+16. Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $K$ that is closed but such that $f(K)$ is not closed. (It will have to be an unbounded set)
+17. Show that if $K$ is a compact set and $F$ is a closed set, then $K\cap F$ is compact.
+18. Show that if $f$ is continuous and $K$ is a compact set then $f(K)$ is a compact set. (use definition via sequences)
 
 ## Topics to know
 
+0. Notions of boundary points and limit points.
 1. Open disc of radius $r$ around a point. Picture.
     - Also "closed disc".
 2. Notion of open set.

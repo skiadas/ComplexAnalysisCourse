@@ -23,7 +23,7 @@ Practice problems:
 13. Suppose $f\colon\mathbb{C}\to\mathbb{C}$ is continuous, and $U\subset\mathbb{C}$ is set. Recall the definition of the set $f^{-1}(U) = \left\{ x\mid f(x)\in U\right\}$, which makes sense regardless of whether $f$ is an invertible function. Show that if $U$ is an open set then $f^{-1}(U)$ is an open set. (Use $\epsilon-\delta$ definition of continuity)
 14. Show that if $f$ is continuous and $K$ is a closed set then $f^{-1}(K)$ is closed.
 15. Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $U$ that is open but such that $f(U)$ is not open.
-16. Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $K$ that is closed but such that $f(K)$ is not closed. (It will have to be an unbounded set)
+16. (Challenge) Find a continuous function $f\colon\mathbb{C}\to\mathbb{C}$ and a set $K$ that is closed but such that $f(K)$ is not closed. (It will have to be an unbounded set)
 17. Show that if $K$ is a compact set and $F$ is a closed set, then $K\cap F$ is compact.
 18. Show that if $f$ is continuous and $K$ is a compact set then $f(K)$ is a compact set. (use definition via sequences)
 

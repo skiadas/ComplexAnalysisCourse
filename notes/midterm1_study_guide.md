@@ -19,7 +19,7 @@ Things you should know:
 15. Root and Ratio tests.
 16. Definition of open and closed sets.
 17. Proof that a set is closed if and only if for every sequence from the set that converges its limit is in the set.
-18. Proof that the infinite union of open sets is open and the finite intersection of closed sets is closed. Counterexamples for the infinite intersection of closed sets.
+18. Proof that the infinite union of open sets is open and the infinite intersection of closed sets is closed. Counterexamples for the infinite intersection of open sets and the infinite union of closed sets.
 19. Proof that the intersection of two open sets is open.
 20. The various equivalent definitions of continuous function.
 21. Proof that the open disc is open and that the closed disc is closed.

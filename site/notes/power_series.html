@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="power-series">Power Series</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 2.2, 2.3</p>
+<h2 id="problems">Problems</h2>
+<p>Practice problems:</p>
+<ol style="list-style-type: decimal">
+<li>(Page 32) 8, 9b, 10, 13, 14, 21, 23</li>
+</ol>
+<p>Challenge: 12, 17, 18</p>
+<h2 id="topics-to-know">Topics to know</h2>
+<ol style="list-style-type: decimal">
+<li>Definition of <span class="math">\(\displaystyle\overline{\lim_{n\to\infty}} a_n = \lim_{n\to\infty}\left(\sup_{k\geq n} a_k\right)\)</span>. If <span class="math">\(\displaystyle\overline{\lim_{n\to\infty}} a_n = L\)</span>, then:
+<ul>
+<li>For each <span class="math">\(N\)</span> and <span class="math">\(\epsilon &gt; 0\)</span> there is a <span class="math">\(k &gt; N\)</span> such that <span class="math">\(a_k \geq L-\epsilon\)</span>.</li>
+<li>For each <span class="math">\(\epsilon &gt; 0\)</span> there is an <span class="math">\(N\)</span> such that for all <span class="math">\(k\geq N\)</span> we have <span class="math">\(a_k \leq L+\epsilon\)</span>.</li>
+</ul></li>
+<li>Radius of convergence for <span class="math">\(\sum C_k z^k\)</span> dependent on <span class="math">\(\displaystyle L =\overline{\lim}\left|C_k\right|^{1/k}\)</span>.
+<ul>
+<li>If <span class="math">\(L = 0\)</span>, then <span class="math">\(\displaystyle L =\overline{\lim}\left|C_k\right|^{1/k}|z| = 0\)</span>, so <span class="math">\(|C_k z^k|\leq\frac{1}{2^k}\)</span>. Series converges absolutely for all <span class="math">\(z\)</span>.</li>
+<li>If <span class="math">\(L = \infty\)</span>, then <span class="math">\(\left|C_k\right|^{1/k}\geq \frac{1}{|z|}\)</span> for infinitely many <span class="math">\(k\)</span>. Hence <span class="math">\(|C_kz^k|\not\to 0\)</span>. Diverges for all <span class="math">\(z\neq 0\)</span>.</li>
+<li>If <span class="math">\(L = 1/R \in (0,\infty)\)</span>:
+<ul>
+<li>If <span class="math">\(|z| = R(1-2\delta) &lt; R\)</span>, then <span class="math">\(\displaystyle\overline{\lim} \left|C_k\right|^{1/k}|z| = 1 - 2\delta\)</span>, so <span class="math">\(\left|C_k\right|^{1/k}|z| &lt; 1-\delta\)</span> for all <span class="math">\(k\)</span> sufficiently large. Series converges.</li>
+<li>If <span class="math">\(|z| &gt; R\)</span> then <span class="math">\(\displaystyle\overline{\lim} \left|C_k\right|^{1/k}|z| &gt; 1\)</span> so <span class="math">\(C_k z^k\not\to 0\)</span>.</li>
+</ul></li>
+</ul></li>
+<li>Examples 1-7 (page 27)</li>
+<li>Differentiability of power series:
+<ul>
+<li>If <span class="math">\(\sum C_n z^n\)</span> converges on some disc <span class="math">\(D(0, R)\)</span>, then so does <span class="math">\(\sum n C_n z^{n-1}\)</span>, since <span class="math">\(\displaystyle\overline{\lim}\left|n C_n\right|^{1/(n-1)} = \overline{\lim}\left|C_n\right|^{1/n}\)</span>.</li>
+<li>Key idea for case where <span class="math">\(R=\infty\)</span>: <span class="math">\(\displaystyle \frac{f(z+h) - f(z)}{h} - \sum_{n=0}^\infty n C_n z^{n-1} = \sum_{n=2}^\infty C_n b_n\)</span> where <span class="math">\(b_n = \frac{(z+h)^n - z^n}{h} - nz^{n-1}\leq |h|\left(|z| + 1\right)^n\)</span>.</li>
+<li>So <span class="math">\(\displaystyle \left|\frac{f(z+h) - f(z)}{h} - \sum_{n=0}^\infty n C_n z^{n-1}\right| \leq A |h|\)</span> (because <span class="math">\(\sum |C_n|(|z|+1)^n\)</span> converges).</li>
+<li>Let <span class="math">\(h\to 0\)</span>.</li>
+<li>If <span class="math">\(R&lt;\infty\)</span> the proof is technically more difficult (see page 29).</li>
+</ul></li>
+<li>Power series are infinitely differentiable.</li>
+<li>Power series coefficients depend on the higher order derivatives at 0.</li>
+<li>Uniqueness theorem: If series is zero when evaluated at all points of a sequence <span class="math">\(z_n\to 0\)</span>, then series is identically zero.
+<ul>
+<li>Inductively compute <span class="math">\(C_n = \lim_{z\to 0}\frac{f(z)}{z^n} = \lim_{k\to \infty}\frac{f(z_k)}{z_k^n} = 0\)</span></li>
+</ul></li>
+<li>If two series agree on a sequence that goes to <span class="math">\(0\)</span>, then they are identical series.</li>
+</ol>
+</body>
+</html>

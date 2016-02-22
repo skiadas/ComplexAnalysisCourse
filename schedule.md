@@ -68,18 +68,18 @@ Day 2
   ~ **Midterm 1** ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ Analytic Polynomials
+  ~ [Compact Sets, Heine-Borel theorem](notes/complex_topology.md)
 
 ## Week  7 (02/22-02/26)
 
 Day 1
-  ~ Differentiable Functions
+  ~ Sick day
 
 Day 2
-  ~ Power Series
+  ~ [Analytic Polynomials](notes/analytic_polynomials.md)
 
 Day 3
-  ~ Differentiability of Power Series
+  ~ [Power Series](notes/power_series.md)
 
 ## Week  8 (03/07-03/11)
 

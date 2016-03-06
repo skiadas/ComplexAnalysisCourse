@@ -29,4 +29,5 @@ Be ready to present propositions 3.6 and 3.7, problems 8, 9, 10
     - Since $f_y = if_x$, we can write $\displaystyle f_x(z) = \frac{h_2}{h} f_y(z) + \frac{h_1}{h}f_x(z)$
     - Take the difference: $\frac{f(z+h) - f(z)}{h} - f_x(z) = \frac{h_2}{h} \bigl[(u_y(z_2) - u_y(z)) + i(v_y(z_1) - v_y(z))\bigr] + \frac{h_1}{h} \bigl[(u_y(z_4) - u_y(z)) + i(v_y(z_3) - v_y(z))\bigr]$
     - Because of continuity, each of the terms goes to $0$. The factors in front are bound by $1$. Therefore the whole thing goes to $0$.
+    - Geometrically, instead of trying to go straight from $z+h$ to $z$, we instead move vertically then horizontally.
 3. $f$ is called **analytic** at $z$ if it is complex-differentiable everywhere in a neighborhood of $z$. It is called analytic on a set $S$ if it is complex-differentiable everywhere in an open set containing $S$.

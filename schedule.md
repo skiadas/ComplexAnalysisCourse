@@ -79,62 +79,62 @@ Day 2
   ~ [Analytic Polynomials](notes/analytic_polynomials.md)
 
 Day 3
-  ~ [Power Series](notes/power_series.md)
+  ~ [Analytic Polynomials, cont](notes/analytic_polynomials.md)
 
 ## Week  8 (03/07-03/11)
 
 Day 1
-  ~ Cauchy-Riemann Equations, Analytic functions
+  ~ [Power Series](notes/power_series.md)
 
 Day 2
-  ~ Extensions of standard functions
+  ~ [Cauchy-Riemann Equations, Analytic functions](notes/cauchy_riemann.md)
 
 Day 3
-  ~ Line Integrals
+  ~ [Extensions of standard functions](notes/standard_functions.md)
 
 ## Week  9 (03/14-03/18)
 
 Day 1
-  ~ Line Integrals and antiderivatives
+  ~ Line Integrals
 
 Day 2
-  ~ Closed Curve Theorem
+  ~ Line Integrals and antiderivatives
 
 Day 3
-  ~ Cauchy Integral Formula
+  ~ Closed Curve Theorem
 
 ## Week 10 (03/21-03/25)
 
 Day 1
-  ~ Taylor Expansion for entire functions
+  ~ Cauchy Integral Formula
 
 Day 2
   ~ **Midterm 2**
 
 Day 3
-  ~ Louisville Theorem, Fundamental Theorem of Algebra
+  ~ Taylor Expansion for entire functions
 
 ## Week 11 (03/28-04/01)
 
 Day 1
-  ~ Power Series for analytic functions on a disc
+  ~ Louisville Theorem, Fundamental Theorem of Algebra
 
 Day 2
-  ~ Mean Value Theorem
+  ~ Power Series for analytic functions on a disc
 
 Day 3
-  ~ Maximum Modulus Theorem
+  ~ Mean Value Theorem
 
 ## Week 12 (04/04-04/08)
 
 Day 1
-  ~ Schwartz's Lemma
+  ~ Maximum Modulus Theorem
 
 Day 2
-  ~ Morera's Theorem
+  ~ Schwartz's Lemma
 
 Day 3
-  ~ TBA
+  ~ Morera's Theorem
 
 ## Week 13 (04/11-04/15)
 

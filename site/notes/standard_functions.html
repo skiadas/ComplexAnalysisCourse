@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="standard-functions">Standard Functions</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 3.2</p>
+<h2 id="problems">Problems</h2>
+<p>Practice problems:</p>
+<p>(Pages 41-42) 12, 13, 14, 15, 17, 18</p>
+<p>Challenge: 16</p>
+<p>Be ready to present problems 14, 15</p>
+<h2 id="topics-to-know">Topics to know</h2>
+<ol style="list-style-type: decimal">
+<li>Can define <span class="math">\(e^z\)</span> via its power series. We will offer an alternative definition.
+<ul>
+<li>Denote the function we are after as <span class="math">\(f(z)\)</span>. We are looking for:
+<ul>
+<li><span class="math">\(f\)</span> analytic.</li>
+<li><span class="math">\(f(z+w) = f(z)f(w)\)</span>.</li>
+<li><span class="math">\(f\)</span> is the exponential when restricted to real numbers.</li>
+</ul></li>
+<li>If <span class="math">\(z=x+iy\)</span>, then <span class="math">\(f(z) = f(x)f(iy)\)</span>. But <span class="math">\(f(x)= e^x\)</span>. Suppose <span class="math">\(f(iy) = A(y) + i B(y)\)</span>, where <span class="math">\(A,B\)</span> are differentiable real functions.</li>
+<li>Then <span class="math">\(f(z) = e^x A(y) + i e^x B(y)\)</span>. Also <span class="math">\(B(0) = 0\)</span> and <span class="math">\(A(0) = 1\)</span>.</li>
+<li>Cauchy-Riemann equations must hold. We compute <span class="math">\(f_x(z) = f(z)\)</span>, and <span class="math">\(f_y(z) = e^x A&#39;(y) + i e^x B&#39;(y)\)</span>. In order for <span class="math">\(f_y = if_x\)</span> to hold, must have <span class="math">\(B&#39; = A\)</span> and <span class="math">\(A&#39; = -B\)</span>.</li>
+<li>These two real-variable differentiable equations are solved by <span class="math">\(A(y) = \cos y\)</span> and <span class="math">\(B(y) = \sin y\)</span>.</li>
+<li>We therefore have <span class="math">\(f(z) = e^x (\cos y + i\sin y) = e^x \textrm{cis} y\)</span>.</li>
+</ul></li>
+<li>Properties:
+<ul>
+<li><span class="math">\(|e^z| = e^{\textrm{Re}(z)}\)</span>.</li>
+<li><span class="math">\(e^z\neq 0\)</span>.</li>
+<li><span class="math">\(e^{iy} = \textrm{cis} y\)</span>.</li>
+<li><span class="math">\(e^z = a\)</span> has infinitely many solutions (explain!!!!).</li>
+<li><span class="math">\((e^z)&#39; = e^z\)</span>. Check it!</li>
+</ul></li>
+<li>Can define:
+<ul>
+<li><span class="math">\(\sin z = \frac{1}{2i}\left(e^{iz} - e^{-iz}\right)\)</span>.</li>
+<li><span class="math">\(\cos z = \frac{1}{2}\left(e^{iz} + e^{-iz}\right)\)</span>.</li>
+<li>These make sense: Can use the two equations <span class="math">\(e^{\pm iy} = \cos y \pm i\sin y\)</span> to show that when <span class="math">\(z\)</span> is real these equations are indeed correct.</li>
+</ul></li>
+</ol>
+</body>
+</html>

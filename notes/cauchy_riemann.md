@@ -18,7 +18,7 @@ Be ready to present propositions 3.6 and 3.7, problems 8, 9, 10
     - For real $h$: $\displaystyle \lim_{h\to 0}\frac{f(z+h) - f(z)}{h} = f_x$.
     - For imaginary $h=it$, $\displaystyle \lim_{h\to 0}\frac{f(z+h) - f(z)}{h} = \frac{f_y}{i}$.
     - So $f_y = if_x$. Equivalently $u_x = v_y$ and $u_y = -v_x$.
-2. Converse is true if the partial derivatives are continuous: If $f_x$ and $f_y$ exist in a neighborhood of $z$ and $f_y = i f_x$. Then $f$ is complex-differentiable and $f'(z) = f_x = -i f_y $.
+2. Converse is true if the partial derivatives are continuous: If $f_x$ and $f_y$ exist in a neighborhood of $z$ and $f_y = i f_x$. Then $f$ is complex-differentiable and $f'(z) = f_x = -i f_y$.
     - Rewrite of mean value theorem: $\displaystyle \frac{f(x+h) - f(x)}{h} = f'(x+\theta h)$ where $0<\theta < 1$ is some specific but unknown number. ($x+\theta h$ is a way to specify an element between $x$ and $x+h$)
     - Suppose $h = h_1 + i h_2$, z = x + i y.
     - $\displaystyle \frac{f(z+h) - f(z)}{h} = \frac{u(z+h) - u(z)}{h} + i \frac{v(z+h) - v(z)}{h}$.

@@ -87,15 +87,15 @@ Day 1
   ~ [Power Series](notes/power_series.md)
 
 Day 2
-  ~ [Cauchy-Riemann Equations, Analytic functions](notes/cauchy_riemann.md)
+  ~ [Power Series, cont](notes/power_series.md)
 
 Day 3
-  ~ [Extensions of standard functions](notes/standard_functions.md)
+  ~ [Cauchy-Riemann Equations, Analytic functions](notes/cauchy_riemann.md)
 
 ## Week  9 (03/14-03/18)
 
 Day 1
-  ~ Line Integrals
+  ~ [Extensions of standard functions](notes/standard_functions.md)
 
 Day 2
   ~ Line Integrals and antiderivatives

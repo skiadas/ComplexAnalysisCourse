@@ -98,7 +98,7 @@ Day 1
   ~ [Extensions of standard functions](notes/standard_functions.md)
 
 Day 2
-  ~ Line Integrals and antiderivatives
+  ~ [Line Integrals and antiderivatives](notes/line_integrals.md)
 
 Day 3
   ~ Closed Curve Theorem

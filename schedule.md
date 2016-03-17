@@ -109,7 +109,7 @@ Day 1
   ~ Cauchy Integral Formula
 
 Day 2
-  ~ **Midterm 2**
+  ~ **Midterm 2** ([study guide](notes/midterm2_study_guide.md))
 
 Day 3
   ~ Taylor Expansion for entire functions

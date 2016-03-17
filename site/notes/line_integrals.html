@@ -27,10 +27,25 @@
 <li>Integrals of <span class="math">\(f(z)\)</span> over equivalent curves are equal.</li>
 <li>Integral over the opposite curve is the negative of the integral over the curve.</li>
 <li>Linearity of the integral (proposition 4.8).</li>
-<li><span class="math">\(\displaystyle\int_a^b G(t)dt \ll \int_a^b |G(t)|dt\)</span>.</li>
+<li><span class="math">\(\displaystyle\int_a^b G(t)dt \ll \int_a^b |G(t)|dt\)</span>.
+<ul>
+<li><span class="math">\(\int_a^b G(t) dt = Re^{i\theta}\)</span></li>
+<li><span class="math">\(\int_a^b e^{i\theta} G(t) dt = R\)</span> is real</li>
+<li><span class="math">\(e^{i\theta} G(t) = A(t) + i B(t)\)</span></li>
+<li>Then <span class="math">\(R = \int_a^b A(t)dt = \int_a^b \textrm{Re}\left(e^{-\theta}G(t)\right)dt\leq \int_a^b |G(t)|dt\)</span>.</li>
+</ul></li>
 <li>ML-formula: If <span class="math">\(f\ll M\)</span> along a curve <span class="math">\(C\)</span> of length <span class="math">\(L\)</span>, then: <span class="math">\[\int_C f(z)dz = \int_a^b f(z(t))\dot z(t)\ll \int_a^b|f(z(t))\dot z(t)|dt\ll M\int_a^b|\dot z(t)|dt = ML\]</span></li>
-<li>If <span class="math">\(f_n\to f\)</span> uniformly on <span class="math">\(C\)</span>, then <span class="math">\(\int_C f_n(z)dz\to \int_C f(z)dz\)</span>.</li>
-<li>If <span class="math">\(F&#39;(z) = f(z)\)</span> then <span class="math">\(\int_C f(z)dz = F(z(b)) - F(z(a))\)</span>.</li>
+<li>If <span class="math">\(f_n\to f\)</span> uniformly on <span class="math">\(C\)</span>, then <span class="math">\(\int_C f_n(z)dz\to \int_C f(z)dz\)</span>.
+<ul>
+<li>Notion of uniform convergence: For every <span class="math">\(\epsilon &gt; 0\)</span> there is an <span class="math">\(N\)</span> such that for all <span class="math">\(n\geq N\)</span> and for all <span class="math">\(x\in C\)</span> we have <span class="math">\(|f_n(x) - f(x)|&lt;\epsilon\)</span>.</li>
+<li>Key idea: <span class="math">\(n\)</span> depends only on $epsilon, but works for all <span class="math">\(x\)</span>.</li>
+</ul></li>
+<li>If <span class="math">\(F&#39;(z) = f(z)\)</span> then <span class="math">\(\int_C f(z)dz = F(z(b)) - F(z(a))\)</span>.
+<ul>
+<li>If <span class="math">\(\lambda(t)\)</span> is the curve, <span class="math">\(\gamma(t) = F(\lambda(t))\)</span></li>
+<li>Then <span class="math">\(\dot\gamma(t) = F&#39;(\lambda(t))\dot\lambda(t) = f(\lambda(t))\dot\lambda(t)\)</span></li>
+<li><span class="math">\(\int_C f(z)dz = \int_a^b f(\lambda(t))\dot\lambda(t)dt = \int_a^b \dot\gamma(t) = \gamma(b) - \gamma(a) = F(z(b)) - F(z(a))\)</span></li>
+</ul></li>
 </ol>
 </body>
 </html>

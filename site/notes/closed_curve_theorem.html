@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="closed-curve-theorem">Closed Curve Theorem</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 4.2</p>
+<h2 id="problems">Problems</h2>
+<p>Practice problems (page 56): 7, 8, 9, 10</p>
+<p>Challenge problems (optional): 11, 12</p>
+<h2 id="topics-to-know">Topics to know</h2>
+<p>Statements in these notes will be slightly more general than in the book. Pay attention to the differences.</p>
+<ol style="list-style-type: decimal">
+<li>Warmup problem: If <span class="math">\(K_1\supset K_2\supset K_3\supset \cdots\)</span> is a sequence of compact sets, then their intersection is nonempty: <span class="math">\(\cap_{n=1}^\infty K_n\neq\emptyset\)</span>.
+<ul>
+<li>Form sequence <span class="math">\((z_n)_{n\in\mathbb{N}}\)</span> where <span class="math">\(z_n\in K_n\)</span>.</li>
+<li>Must have a convergent subsequence, that converges to <span class="math">\(z_0\)</span>.</li>
+<li>Show it must belong to all the <span class="math">\(K_n\)</span>.</li>
+</ul></li>
+<li>Rectangle Theorem for Linear functions: A linear function around any rectangle has integral <span class="math">\(0\)</span>.
+<ul>
+<li>Any function that has an antiderivative would have zero integral along a closed curve.</li>
+</ul></li>
+<li>If <span class="math">\(f\)</span> is differentiable at <span class="math">\(z_0\)</span> then <span class="math">\(f(z) = f(z_0) + f&#39;(z_0)(z-z_0) + g(z)(z-z_0)\)</span> where <span class="math">\(g\)</span> is continuous at <span class="math">\(z_0\)</span> and <span class="math">\(g(z_0) = 0\)</span>.
+<ul>
+<li>It is also differentiable/continuous anywhere else where <span class="math">\(g\)</span> is differentiable/continuous.</li>
+<li>The converse is also true.</li>
+</ul></li>
+<li>Rectangle Theorem: If <span class="math">\(f\)</span> analytic on an open set containing a rectangle, then its integral around the rectangle is <span class="math">\(0\)</span>.
+<ul>
+<li>Say integral equal <span class="math">\(I\neq 0\)</span>.</li>
+<li>Split rectangle in 4 quarters. At least one quarter must have integral that is <span class="math">\(\gg I/4\)</span>.</li>
+<li>Split <em>that</em> quarter up in 4 quarters. At least one of those must have integral <span class="math">\(\gg I/16\)</span>.</li>
+<li>Continue in this manner. Have a sequence of rectangles each containing all the remaining ones, the <span class="math">\(n\)</span>-th rectangle having an integral <span class="math">\(\gg I/4^n\)</span>.</li>
+<li>Let <span class="math">\(z_0\)</span> be a point contained in all those rectangles (by first item).</li>
+<li>Write <span class="math">\(f(z) = f(z_0) + f&#39;(z_0)(z-z_0) + g(z)(z-z_0)\)</span>.</li>
+<li><span class="math">\(\int_\Gamma f(z)dz\)</span> = <span class="math">\(\int_\Gamma g(z)(z-z_0)dz\)</span> (difference is linear, 3rd item applies).</li>
+<li>Let <span class="math">\(\epsilon &gt; 0\)</span>. There is a <span class="math">\(\delta&gt;0\)</span>, which we can further assume is <span class="math">\(\delta \leq 1\)</span>, such that <span class="math">\(|z-z_0|&lt;\delta\)</span> implies <span class="math">\(|g(z)|&lt;\epsilon\)</span>.</li>
+<li>Choose <span class="math">\(N\)</span> such that the <span class="math">\(N\)</span>-th rectangle is fully contained in <span class="math">\(D_{z_0}(\delta)\)</span>. This is possible as the diameters of these rectangles go to <span class="math">\(0\)</span>.</li>
+<li>We now consider the integral of <span class="math">\(g(z)(z-z_0)\)</span> along that <span class="math">\(N\)</span>-th rectangle. It has length <span class="math">\(L/4^n\)</span> where <span class="math">\(L\)</span> is the length of the original integral. The integrand is bounded by <span class="math">\(\epsilon \delta &lt; \epsilon\)</span>, since the whole rectangle is contained in <span class="math">\(D_{z_0}(\delta)\)</span>.</li>
+<li>Therefore the integral over the <span class="math">\(N\)</span>-th rectangle is <span class="math">\(\ll \frac{L\epsilon}{4^n}\)</span> by the ML-formula.</li>
+<li>But we built those rectangles so that the integral is <span class="math">\(\gg I/4^n\)</span>.</li>
+<li>Putting the two together we have <span class="math">\(\frac{I}{4^n}\ll \frac{L\epsilon}{4^n}\)</span>.</li>
+<li>So <span class="math">\(I\ll L\epsilon\)</span>. For all <span class="math">\(\epsilon &gt; 0\)</span>. This is clearly not true the moment we pick an <span class="math">\(\epsilon &lt; I / L\)</span>.</li>
+<li>This contradicts the assumption that <span class="math">\(I\neq 0\)</span>.</li>
+</ul></li>
+<li>If <span class="math">\(f\)</span> is analytic on a domain (open connected set) <span class="math">\(U\)</span>, fix a point <span class="math">\(z_0\)</span>. Assume the domain is convex (can go from any one point to any other in a straight line). For any other point <span class="math">\(z\in U\)</span>, consider a path <span class="math">\(C\)</span> from <span class="math">\(z_0\)</span> to <span class="math">\(z\)</span> consisting entirely of horizontal and vertical segments. Define <span class="math">\(F(z) = \int_C f(z)dz\)</span>. This integral is independent of the path chosen.
+<ul>
+<li>Think about why there are such paths.</li>
+<li>Think about why the question of independence of the value from the path boils down to looking at small rectangles and going from one corner to the opposite along the two possible ways.</li>
+<li>Part 4 showed that the integral around a rectangle is <span class="math">\(0\)</span>. This implies that going from one corner to the opposite gives the same answer whichever side we choose to go around the rectangle.</li>
+</ul></li>
+<li>With <span class="math">\(f\)</span> and <span class="math">\(F\)</span> as in the previous part, <span class="math">\(F\)</span> is differentiable and <span class="math">\(F&#39;(z) = f(z)\)</span>.
+<ul>
+<li><span class="math">\(F(z+h) - F(z) = \int_z^{z+h} f(t)dt\)</span> where the path from <span class="math">\(z\)</span> to <span class="math">\(z+h\)</span> is one of the two paths around the rectangle, say the one that goes along the real direction first.</li>
+<li>Also have <span class="math">\(f(z) = \frac{1}{h} \int_z^{z+h} f(z) dt\)</span>.</li>
+<li>Then <span class="math">\(\displaystyle\frac{F(z+h) - F(z)}{h} - f(z) = \frac{1}{h}\int_z^{z+h}f(t) -f(z) dt\)</span>.</li>
+<li>For a given <span class="math">\(\epsilon &gt; 0\)</span>, and since <span class="math">\(f\)</span> is continuous at <span class="math">\(z\)</span>, we can choose <span class="math">\(h\)</span> small enough so that <span class="math">\(f(t) - f(z) \ll \epsilon\)</span> for all <span class="math">\(t\)</span> in the rectangle with edges <span class="math">\(z\)</span> and <span class="math">\(z+h\)</span>.</li>
+<li>Then <span class="math">\(\displaystyle\frac{F(z+h) - F(z)}{h} - f(z) \ll \frac{1}{h}2h\epsilon = 2\epsilon\)</span> by ML-formula.</li>
+<li>This proves that <span class="math">\(F&#39;(z) = f(z)\)</span>.</li>
+</ul></li>
+<li>Closed Curve Theorem: If <span class="math">\(U\)</span> is a convex domain and <span class="math">\(f\)</span> is analytic on <span class="math">\(U\)</span>, then <span class="math">\(\int_C f(z)dz = 0\)</span> for any closed curve contained in <span class="math">\(U\)</span>.
+<ul>
+<li>The previous part tells us that <span class="math">\(f(z)\)</span> has an antiderivative on <span class="math">\(U\)</span>.</li>
+</ul></li>
+</ol>
+</body>
+</html>

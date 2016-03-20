@@ -106,7 +106,7 @@ Day 3
 ## Week 10 (03/21-03/25)
 
 Day 1
-  ~ Closed Curve Theorem
+  ~ [Closed Curve Theorem](notes/closed_curve_theorem.md)
 
 Day 2
   ~ **Midterm 2** ([study guide](notes/midterm2_study_guide.md))

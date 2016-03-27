@@ -66,7 +66,7 @@ Your final grade depends on class attendance, homework, project, quizzes, midter
 --------------  --------
  Participation       15%
       Homework       15%
- Worst Midterm       20%
+ Worst Midterm       15%
 Middle Midterm       25%
   Best Midterm       30%
 

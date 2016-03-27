@@ -106,43 +106,43 @@ Day 3
 ## Week 10 (03/21-03/25)
 
 Day 1
-  ~ [Closed Curve Theorem](notes/closed_curve_theorem.md)
+  ~ [Line Integrals and antiderivatives, cont](notes/line_integrals.md)
 
 Day 2
   ~ **Midterm 2** ([study guide](notes/midterm2_study_guide.md))
 
 Day 3
-  ~ Cauchy Integral Formula
+  ~ [Closed Curve Theorem](notes/closed_curve_theorem.md)
 
 ## Week 11 (03/28-04/01)
 
 Day 1
-  ~ Taylor Expansion for entire functions
+  ~ [Closed Curve Theorem, cont](notes/closed_curve_theorem.md)
 
 Day 2
-  ~ Louisville Theorem, Fundamental Theorem of Algebra
+  ~ [Cauchy Integral Formula](notes/cauchy_integral_formula.md)
 
 Day 3
-  ~ Power Series for analytic functions on a disc
+  ~ Taylor Expansion for entire functions
 
 ## Week 12 (04/04-04/08)
 
 Day 1
-  ~ Mean Value Theorem
+  ~ Louisville Theorem, Fundamental Theorem of Algebra
 
 Day 2
-  ~ Maximum Modulus Theorem
+  ~ Power Series for analytic functions on a disc
 
 Day 3
-  ~ Schwartz's Lemma
+  ~ Mean Value Theorem
 
 ## Week 13 (04/11-04/15)
 
 Day 1
-  ~ Morera's Theorem
+  ~ Maximum Modulus Theorem
 
 Day 2
-  ~ TBA
+  ~ Schwartz's Lemma
 
 Day 3
-  ~ TBA
+  ~ Morera's Theorem

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="cauchy-integral-formula">Cauchy Integral Formula</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 5.1 (up to bottom of page 62)</p>
+<h2 id="topics-to-know">Topics to know</h2>
+<ol style="list-style-type: decimal">
+<li>If <span class="math">\(f\)</span> is analytic on a convex domain <span class="math">\(U\)</span>, <span class="math">\(a\in U\)</span> a point, and <span class="math">\(g(z)\)</span> is the continuous function such that <span class="math">\(f(z) = f(a) + f&#39;(a)(z-a) + g(z)(z-a)\)</span>, then the rectangle theorem applies to <span class="math">\(g\)</span>: <span class="math">\(\int_\Gamma f(z)dz = 0\)</span>
+<ul>
+<li>If <span class="math">\(a\)</span> is in the exterior of the rectangle, then the previous proof basically works.</li>
+<li>If <span class="math">\(a\)</span> is a boundary point, let <span class="math">\(M\)</span> be a bound of <span class="math">\(g\)</span> on the rectangle (since <span class="math">\(g\)</span> is continuous).
+<ul>
+<li>Break rectangle into six rectangles, one small around <span class="math">\(a\)</span> with boundary less than an arbitrary <span class="math">\(\epsilon&gt;0\)</span>.</li>
+<li>The other 5 rectangles have integral <span class="math">\(0\)</span>.</li>
+<li>The remaining one has integral <span class="math">\(\gg M\epsilon\)</span>, which can be made arbitrarily small.</li>
+<li>Total integral is <span class="math">\(0\)</span>.</li>
+</ul></li>
+<li>If <span class="math">\(a\)</span> is an interior point, break into two rectangles that have <span class="math">\(a\)</span> as boundary point. Then previous part applies.</li>
+</ul></li>
+<li>For <span class="math">\(g\)</span> as above, the integral theorem and the closed curve theorem also hold.</li>
+<li>Note: All we really needed was that <span class="math">\(g\)</span> is everywhere continuous, and analytic except at finitely many points. We can do similar decompositions of the rectangle as long as there are only finitely many points to worry about.</li>
+<li>Cauchy Integral Formula: Suppose <span class="math">\(f\)</span> is analytic on an open set <span class="math">\(U\)</span> and <span class="math">\(a\in U\)</span> a point. Suppose <span class="math">\(R&gt;0\)</span> is small enough so that the closed disc around <span class="math">\(a\)</span> of radius <span class="math">\(R\)</span> is contained in <span class="math">\(U\)</span>. Suppose <span class="math">\(C\)</span> is the curve that traces the circle of radius <span class="math">\(R\)</span> centered at <span class="math">\(a\)</span>, with parametric equation <span class="math">\(z(\theta) = a + Re^{i\theta}\)</span>, <span class="math">\(\theta\in[0,2\pi]\)</span>. Then: <span class="math">\[f(a) = \frac{1}{2\pi i}\int_C \frac{f(z)}{z-a}dz\]</span>
+<ul>
+<li>By the previous parts, <span class="math">\(\int_C \frac{f(z)-f(a)}{z-a}dz = 0\)</span>.</li>
+<li>So <span class="math">\(f(a) \int_C \frac{1}{z-a}dz = \int_C \frac{f(z)}{z-a}dz\)</span>.</li>
+<li>Direct computation shows that <span class="math">\(\int_C \frac{1}{z-a}dz = 2\pi i\)</span> and the result follows.</li>
+</ul></li>
+<li>Same result holds for any other circle containing <span class="math">\(a\)</span>, even if it is not centered at <span class="math">\(a\)</span>.
+<ul>
+<li>A way to see this is to consider both that circle <span class="math">\(C\)</span> as well as a circle <span class="math">\(C_2\)</span> centered at <span class="math">\(a\)</span> and with a radius small enough so that it is fully contained in the interior of <span class="math">\(C\)</span>.</li>
+<li>We can join the combination <span class="math">\(C-C_2\)</span> with two radial lines, then decompose it into two pieces that are both closed curves for which the closed curve theorem applies.</li>
+<li>Alternative analytic proof on page 62 (lemma 5.4).</li>
+</ul></li>
+</ol>
+</body>
+</html>

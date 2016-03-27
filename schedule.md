@@ -123,26 +123,26 @@ Day 2
   ~ [Cauchy Integral Formula](notes/cauchy_integral_formula.md)
 
 Day 3
-  ~ Taylor Expansion for entire functions
+  ~ [Power Series for analytic functions on a disc](notes/cauchy_integral_formula.md)
 
 ## Week 12 (04/04-04/08)
 
 Day 1
-  ~ Louisville Theorem, Fundamental Theorem of Algebra
+  ~ [Louisville Theorem, Fundamental Theorem of Algebra](notes/louisville_theorem.md)
 
 Day 2
-  ~ Power Series for analytic functions on a disc
+  ~ Mean Value Theorem
 
 Day 3
-  ~ Mean Value Theorem
+  ~ Maximum Modulus Theorem
 
 ## Week 13 (04/11-04/15)
 
 Day 1
-  ~ Maximum Modulus Theorem
-
-Day 2
   ~ Schwartz's Lemma
 
-Day 3
+Day 2
   ~ Morera's Theorem
+
+Day 3
+  ~ TBA

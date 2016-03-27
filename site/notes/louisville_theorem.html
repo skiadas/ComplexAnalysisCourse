@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="louisvilles-theorem">Louisville’s Theorem</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 5.2</p>
+<h2 id="problems">Problems</h2>
+<p>Practice problems (page 74): 6b, 8, 9, 10, 12, 15</p>
+<p>Challenge (optional): 13</p>
+<h2 id="topics-to-know">Topics to know</h2>
+<ol style="list-style-type: decimal">
+<li>Louisville’s Theorem: An entire bounded function is constant.
+<ul>
+<li>Fix two points <span class="math">\(a, b\)</span>. Consider <span class="math">\(R\to \infty\)</span>, and focus on circle <span class="math">\(C\)</span> around <span class="math">\(0\)</span> with radius <span class="math">\(R\)</span>.</li>
+<li><span class="math">\(f(b) - f(a) = \frac{1}{2\pi i}\left(\int_C \frac{f(z)}{z-a}dz - \int_C \frac{f(z)}{z-b}dz\right) = \frac{1}{2\pi i}\int_C \frac{f(z)(b-a)}{(z-a)(z-b)}dz\)</span></li>
+<li>If <span class="math">\(f \ll M\)</span>, then this integral is <span class="math">\(\ll \frac{M(b-a) R}{(R-|a|)(R-|b|)}\)</span>.</li>
+<li>As <span class="math">\(R\to \infty\)</span>, this goes to <span class="math">\(0\)</span>.</li>
+<li>So <span class="math">\(f(b)-f(a)\)</span> must equal <span class="math">\(0\)</span>.</li>
+</ul></li>
+<li>Extended Louisville Theorem: If <span class="math">\(f\)</span> is entire and <span class="math">\(|f(z)| \leq A + B|z|^k\)</span>, then <span class="math">\(f\)</span> is a polynomial of degree at most <span class="math">\(k\)</span>.
+<ul>
+<li>Proof by induction on <span class="math">\(k\)</span>, base case being Louisville’s Theorem.</li>
+<li><span class="math">\(|g(z)| = \left|\frac{f(z) - f(0)}{z}\right| \leq C + D|z|^{k-1}\)</span>
+<ul>
+<li>Near <span class="math">\(0\)</span> it can be extended to be entire, so is bounded</li>
+<li>For <span class="math">\(|z| \geq 1\)</span>: <span class="math">\(\frac{|f(z) - f(0)|}{|z|}\leq \frac{|f(z)| + |f(0)|}{|z|} \leq \frac{A + |f(0)| + B |z|^k}{|z|}\leq C + B|z|^{k-1}\)</span></li>
+</ul></li>
+<li>By induction <span class="math">\(g\)</span> must be a polynomial of degree at most <span class="math">\(k-1\)</span>.</li>
+<li><span class="math">\(f(z) = f(0) + z g(z)\)</span> is a polynomial of degree at most <span class="math">\(k\)</span>.</li>
+</ul></li>
+<li>Alternative proof of the above two facts (exercises 6, 7):
+<ul>
+<li>If <span class="math">\(f\)</span> is bounded by <span class="math">\(M\)</span> along the circle of radius <span class="math">\(R\)</span> around <span class="math">\(0\)</span> and <span class="math">\(a_k\)</span> is the <span class="math">\(k\)</span>-th coefficient in its power series expansion around <span class="math">\(0\)</span>, then <span class="math">\(|a_k|\leq \frac{M}{R^k}\)</span>. This follows from <span class="math">\(M-L\)</span> formula on <span class="math">\(a_k = \frac{1}{2\pi i}\int_C \frac{f(z)}{z^{k+1}} dz\)</span></li>
+<li>So if <span class="math">\(f\)</span> is bounded on the entire complex plane, <span class="math">\(R\)</span> can be arbitrarily large, forcing <span class="math">\(a_k=0\)</span> for all <span class="math">\(k\geq 1\)</span>. So power series is just constant, so <span class="math">\(f\)</span> is constant.</li>
+<li>If <span class="math">\(|f(z)|\leq A + B|z|^k\)</span>, and <span class="math">\(j &gt; k\)</span>, then <span class="math">\(|a_j| \leq \frac{A + B R^k}{R^j}\)</span> must be valid for all <span class="math">\(R &gt; 0\)</span>, so it must equal <span class="math">\(0\)</span> if we consider <span class="math">\(R\to \infty\)</span>. Therefore the power series terminates at the <span class="math">\(k\)</span>-th term, hence a polynomial.</li>
+</ul></li>
+<li>Fundamental Theorem of Algebra: Any non-constant polynomial <span class="math">\(P\)</span> must have a zero. And by induction, it has exactly <span class="math">\(\textrm{deg} P\)</span> zeroes.
+<ul>
+<li>Suppose not. Consider <span class="math">\(f(z) = \frac{1}{P(z)}\)</span>.</li>
+<li><span class="math">\(f\)</span> is entire.</li>
+<li><span class="math">\(P(z) \to \infty\)</span> as <span class="math">\(z\to\infty\)</span>. So <span class="math">\(f\)</span> is bounded.</li>
+<li>So <span class="math">\(f\)</span> must be constant. Then <span class="math">\(P\)</span> is constant, a contradiction.</li>
+</ul></li>
+<li>Gauss-Lucas theorem (proof on page 68): The zeroes of the derivative of a polynomial lie within the convex hull of the zeros of the polynomial.</li>
+</ol>
+</body>
+</html>

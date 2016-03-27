@@ -15,7 +15,10 @@
 <body>
 <h1 id="cauchy-integral-formula">Cauchy Integral Formula</h1>
 <h2 id="reading">Reading</h2>
-<p>Section 5.1 (up to bottom of page 62)</p>
+<p>Section 5.1, 6.1, 6.2</p>
+<h2 id="problems">Problems</h2>
+<p>Practice problems (page 74): 2, 3, 4, 5</p>
+<p>Practice problems (page 90): 1, 2, 3</p>
 <h2 id="topics-to-know">Topics to know</h2>
 <ol style="list-style-type: decimal">
 <li>If <span class="math">\(f\)</span> is analytic on a convex domain <span class="math">\(U\)</span>, <span class="math">\(a\in U\)</span> a point, and <span class="math">\(g(z)\)</span> is the continuous function such that <span class="math">\(f(z) = f(a) + f&#39;(a)(z-a) + g(z)(z-a)\)</span>, then the rectangle theorem applies to <span class="math">\(g\)</span>: <span class="math">\(\int_\Gamma f(z)dz = 0\)</span>
@@ -42,8 +45,26 @@
 <ul>
 <li>A way to see this is to consider both that circle <span class="math">\(C\)</span> as well as a circle <span class="math">\(C_2\)</span> centered at <span class="math">\(a\)</span> and with a radius small enough so that it is fully contained in the interior of <span class="math">\(C\)</span>.</li>
 <li>We can join the combination <span class="math">\(C-C_2\)</span> with two radial lines, then decompose it into two pieces that are both closed curves for which the closed curve theorem applies.</li>
-<li>Alternative analytic proof on page 62 (lemma 5.4).</li>
+<li>Alternative analytic proof on page 62 (lemma 5.4), using power series expansion of <span class="math">\(\frac{1}{z-a}\)</span> around the circle’s center <span class="math">\(\alpha\)</span>.</li>
 </ul></li>
+<li>Series expansion of analytic function: If we have an analytic function <span class="math">\(f(z)\)</span> defined on a domain <span class="math">\(U\)</span>, and <span class="math">\(a\in U\)</span> is a point. Then the function equals a power series centered at <span class="math">\(a\)</span>, the equality holding on the largest open disc centered at <span class="math">\(a\)</span> that is fully contained in <span class="math">\(U\)</span>.
+<ul>
+<li>Let <span class="math">\(z\in U\)</span> be in that disc. Let <span class="math">\(R &gt; |z-a|\)</span> be smaller than this disc’s radius.</li>
+<li>Let <span class="math">\(C_R\)</span> be the disc centered at <span class="math">\(a\)</span> with radius <span class="math">\(R\)</span>.</li>
+<li>Then <span class="math">\(f(z) = \frac{1}{2\pi i}\int_{C_R}\frac{f(w)}{w-z} dw\)</span></li>
+<li><span class="math">\(\frac{1}{w-z} = \frac{1}{(w-a) - (z-a)} = \frac{1}{(w-a)(1-\frac{z-a}{w-a})}\)</span></li>
+<li>Let <span class="math">\(\rho = \frac{z-a}{w-a}\)</span>. It is less than and bounded away from <span class="math">\(1\)</span> when <span class="math">\(w\in C_R\)</span>.</li>
+<li><span class="math">\(\frac{1}{1-\rho} = 1 + \rho + \rho^2 + \cdots\)</span> uniformly in <span class="math">\(\rho\in C_R\)</span>.</li>
+<li><span class="math">\(f(z) = \frac{1}{2\pi i}\int_{C_R} \frac{f(w)}{(w-a)(1-\rho)} dw = \frac{1}{2\pi i} \int_{C_R}\frac{f(w)}{w-a} \left(1 + \rho + \rho^2 + \cdots\right)\)</span></li>
+<li>Let <span class="math">\(a_k = \frac{1}{2\pi i}\int_{C_R} \frac{f(w)}{(w-a)^{k+1}}dw\)</span>.</li>
+<li>Then <span class="math">\(f(z) = \sum a_k (z-a)^k\)</span>.</li>
+<li>By previous discussions, the radius <span class="math">\(R\)</span> on <span class="math">\(\int_{C_R} \frac{f(w)}{(w-a)^{k+1}}dw\)</span> doesn’t affect the value as long as the disc stays within the domain of analyticity of <span class="math">\(f\)</span>. Also, <span class="math">\(a_k\)</span> must equal <span class="math">\(\frac{f^{(k)}(a)}{k!}\)</span> (i.e. the <span class="math">\(k\)</span>-the derivative must exist and equal <span class="math">\(k! a_k\)</span>).</li>
+<li>So the above power series can be pushed to be valid on the largest disc around <span class="math">\(a\)</span> contained in <span class="math">\(U\)</span>.</li>
+</ul></li>
+<li>Consequence: An analytic function is infinitely differentiable (since power series are).</li>
+<li>Special case: If <span class="math">\(f\)</span> is entire, then it equals a power series everywhere. In particular, it equals its Taylor series expansion around any point.</li>
+<li>Consequence: If <span class="math">\(f(z)\)</span> is analytic with a zero at a point <span class="math">\(a\)</span>, then <span class="math">\(\frac{f(z)}{z-a}\)</span> can be extended to <span class="math">\(a\)</span> (with value <span class="math">\(f&#39;(a)\)</span>) and be analytic.</li>
+<li>Same result for finitely many zeros: <span class="math">\(\frac{f(z)}{(z-a_1)(z-a_2)\cdots (z-a_k)}\)</span> is analytic in the same set as <span class="math">\(f(z)\)</span>.</li>
 </ol>
 </body>
 </html>

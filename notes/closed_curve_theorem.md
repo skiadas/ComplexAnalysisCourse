@@ -33,11 +33,12 @@ Statements in these notes will be slightly more general than in the book. Pay at
     - $\int_\Gamma f(z)dz$ = $\int_\Gamma g(z)(z-z_0)dz$ (difference is linear, 3rd item applies).
     - Let $\epsilon > 0$. There is a $\delta>0$, which we can further assume is $\delta \leq 1$, such that $|z-z_0|<\delta$ implies $|g(z)|<\epsilon$.
     - Choose $N$ such that the $N$-th rectangle is fully contained in $D_{z_0}(\delta)$. This is possible as the diameters of these rectangles go to $0$.
-    - We now consider the integral of $g(z)(z-z_0)$ along that $N$-th rectangle. It has length $L/4^n$ where $L$ is the length of the original integral. The integrand is bounded by $\epsilon \delta < \epsilon$, since the whole rectangle is contained in $D_{z_0}(\delta)$.
-    - Therefore the integral over the $N$-th rectangle is $\ll \frac{L\epsilon}{4^n}$ by the ML-formula.
+    - We now consider the integral of $g(z)(z-z_0)$ along that $N$-th rectangle. It has length $L/2^n$ where $L$ is the length of the original integral.
+        - Along the path of integration, $|z-z_0|$ is bounded by the diameter of the rectangle, since the whole rectangle is contained in $D_{z_0}(\delta)$. The diameter is no more than the perimeter, $L/2^n$. The integrand is thus bounded by $\epsilon \delta < \epsilon L / 2^n$.
+    - Therefore the integral over the $N$-th rectangle is $\ll \frac{L^2\epsilon}{4^n}$ by the ML-formula.
     - But we built those rectangles so that the integral is $\gg I/4^n$.
-    - Putting the two together we have $\frac{I}{4^n}\ll \frac{L\epsilon}{4^n}$.
-    - So $I\ll L\epsilon$. For all $\epsilon > 0$. This is clearly not true the moment we pick an $\epsilon < I / L$.
+    - Putting the two together we have $\frac{I}{4^n}\ll \frac{L^2\epsilon}{4^n}$.
+    - So $I\ll L^2\epsilon$. For all $\epsilon > 0$. This is clearly not true the moment we pick an $\epsilon < I / L^2$.
     - This contradicts the assumption that $I\neq 0$.
 5. If $f$ is analytic on a domain (open connected set) $U$, fix a point $z_0$. Assume the domain is convex (can go from any one point to any other in a straight line). For any other point $z\in U$, consider a path $C$ from $z_0$ to $z$ consisting entirely of horizontal and vertical segments. Define $F(z) = \int_C f(z)dz$. This integral is independent of the path chosen.
     - Think about why there are such paths.

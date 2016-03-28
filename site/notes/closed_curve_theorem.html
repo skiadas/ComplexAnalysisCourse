@@ -48,11 +48,14 @@
 <li><span class="math">\(\int_\Gamma f(z)dz\)</span> = <span class="math">\(\int_\Gamma g(z)(z-z_0)dz\)</span> (difference is linear, 3rd item applies).</li>
 <li>Let <span class="math">\(\epsilon &gt; 0\)</span>. There is a <span class="math">\(\delta&gt;0\)</span>, which we can further assume is <span class="math">\(\delta \leq 1\)</span>, such that <span class="math">\(|z-z_0|&lt;\delta\)</span> implies <span class="math">\(|g(z)|&lt;\epsilon\)</span>.</li>
 <li>Choose <span class="math">\(N\)</span> such that the <span class="math">\(N\)</span>-th rectangle is fully contained in <span class="math">\(D_{z_0}(\delta)\)</span>. This is possible as the diameters of these rectangles go to <span class="math">\(0\)</span>.</li>
-<li>We now consider the integral of <span class="math">\(g(z)(z-z_0)\)</span> along that <span class="math">\(N\)</span>-th rectangle. It has length <span class="math">\(L/4^n\)</span> where <span class="math">\(L\)</span> is the length of the original integral. The integrand is bounded by <span class="math">\(\epsilon \delta &lt; \epsilon\)</span>, since the whole rectangle is contained in <span class="math">\(D_{z_0}(\delta)\)</span>.</li>
-<li>Therefore the integral over the <span class="math">\(N\)</span>-th rectangle is <span class="math">\(\ll \frac{L\epsilon}{4^n}\)</span> by the ML-formula.</li>
+<li>We now consider the integral of <span class="math">\(g(z)(z-z_0)\)</span> along that <span class="math">\(N\)</span>-th rectangle. It has length <span class="math">\(L/2^n\)</span> where <span class="math">\(L\)</span> is the length of the original integral.
+<ul>
+<li>Along the path of integration, <span class="math">\(|z-z_0|\)</span> is bounded by the diameter of the rectangle, since the whole rectangle is contained in <span class="math">\(D_{z_0}(\delta)\)</span>. The diameter is no more than the perimeter, <span class="math">\(L/2^n\)</span>. The integrand is thus bounded by <span class="math">\(\epsilon \delta &lt; \epsilon L / 2^n\)</span>.</li>
+</ul></li>
+<li>Therefore the integral over the <span class="math">\(N\)</span>-th rectangle is <span class="math">\(\ll \frac{L^2\epsilon}{4^n}\)</span> by the ML-formula.</li>
 <li>But we built those rectangles so that the integral is <span class="math">\(\gg I/4^n\)</span>.</li>
-<li>Putting the two together we have <span class="math">\(\frac{I}{4^n}\ll \frac{L\epsilon}{4^n}\)</span>.</li>
-<li>So <span class="math">\(I\ll L\epsilon\)</span>. For all <span class="math">\(\epsilon &gt; 0\)</span>. This is clearly not true the moment we pick an <span class="math">\(\epsilon &lt; I / L\)</span>.</li>
+<li>Putting the two together we have <span class="math">\(\frac{I}{4^n}\ll \frac{L^2\epsilon}{4^n}\)</span>.</li>
+<li>So <span class="math">\(I\ll L^2\epsilon\)</span>. For all <span class="math">\(\epsilon &gt; 0\)</span>. This is clearly not true the moment we pick an <span class="math">\(\epsilon &lt; I / L^2\)</span>.</li>
 <li>This contradicts the assumption that <span class="math">\(I\neq 0\)</span>.</li>
 </ul></li>
 <li>If <span class="math">\(f\)</span> is analytic on a domain (open connected set) <span class="math">\(U\)</span>, fix a point <span class="math">\(z_0\)</span>. Assume the domain is convex (can go from any one point to any other in a straight line). For any other point <span class="math">\(z\in U\)</span>, consider a path <span class="math">\(C\)</span> from <span class="math">\(z_0\)</span> to <span class="math">\(z\)</span> consisting entirely of horizontal and vertical segments. Define <span class="math">\(F(z) = \int_C f(z)dz\)</span>. This integral is independent of the path chosen.

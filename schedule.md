@@ -122,6 +122,8 @@ Day 1
 Day 2
   ~ [Cauchy Integral Formula](notes/cauchy_integral_formula.md)
 
+    [Assignment 1](notes/assignment1.md) due Friday, April 15
+
 Day 3
   ~ [Power Series for analytic functions on a disc](notes/cauchy_integral_formula.md)
 

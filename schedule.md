@@ -133,10 +133,10 @@ Day 1
   ~ [Louisville Theorem, Fundamental Theorem of Algebra](notes/louisville_theorem.md)
 
 Day 2
-  ~ Mean Value Theorem
+  ~ [Uniqueness Theorem, Mean Value Theorem](notes/uniqueness_mean.md)
 
 Day 3
-  ~ Maximum Modulus Theorem
+  ~ [Maximum Modulus Theorem and Minimum Modulus Theorem](notes/uniqueness_mean.md)
 
 ## Week 13 (04/11-04/15)
 

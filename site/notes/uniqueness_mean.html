@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="uniqueness-mean-value-maximum-modulus-theorems">Uniqueness, Mean Value, Maximum Modulus Theorems</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 6.3</p>
+<h2 id="problems">Problems</h2>
+<p>Practice problems (page 90): 4, 5, 6, 7, 8, 10</p>
+<p>Challenge: 12, 13</p>
+<h2 id="topics-to-know">Topics to know</h2>
+<ol style="list-style-type: decimal">
+<li>Uniqueness Theorem: On a domain <span class="math">\(U\)</span>, if there is a sequence <span class="math">\(z_n\subset U\)</span> and <span class="math">\(z\in U\)</span> such that <span class="math">\(z_n\to z\)</span>, and <span class="math">\(f(z_n) = 0\)</span>, then <span class="math">\(f\)</span> is identically zero on <span class="math">\(U\)</span>.
+<ul>
+<li>Note that power series uniqueness says: If <span class="math">\(y_n\to y \in U\)</span> and <span class="math">\(f(y_n) = 0\)</span> and <span class="math">\(D(y, r)\subset U\)</span>, then <span class="math">\(f(z) = 0\)</span> for all <span class="math">\(z\in D(y, r)\)</span>.</li>
+<li>Define <span class="math">\(A = \{a \in U \mid a \textrm{ is the limit point of a sequence of zeros } \}\)</span> (in particular <span class="math">\(f(z) = 0\)</span> for all <span class="math">\(z\in A\)</span>).</li>
+<li>Define <span class="math">\(B\)</span> be the rest.</li>
+<li>We will show they are both open sets. Because U is connected one of them has to be empty. Since <span class="math">\(A\)</span> is nonempty, <span class="math">\(B\)</span> must be empty.</li>
+<li><span class="math">\(A\)</span> is open because of the power series uniqueness: If <span class="math">\(z\in A\)</span> then we can find a sequence of zeros going to <span class="math">\(z\)</span>. Since <span class="math">\(U\)</span> is open there is an <span class="math">\(D(z, r)\subset U\)</span>, and <span class="math">\(f\)</span> is identically <span class="math">\(0\)</span> there. All these points are limit points of zeros of <span class="math">\(f\)</span>, so <span class="math">\(D(z, r)\subset A\)</span>.</li>
+<li><span class="math">\(B\)</span> is open: If <span class="math">\(z\in B\)</span>, then there must be an <span class="math">\(r&gt;0\)</span> such that <span class="math">\(D(z, r)\subset B\)</span>. If not, we will build a sequence of zeros going to <span class="math">\(z\)</span>:
+<ul>
+<li>For each <span class="math">\(\epsilon &gt; 0\)</span> there is a <span class="math">\(w\in D(z, \epsilon/2)\)</span> with <span class="math">\(w\not\in B\)</span>.</li>
+<li>This <span class="math">\(w\)</span> must be the limit point of a sequence of zeros, so there is a zero <span class="math">\(y\)</span> such that <span class="math">\(y\in D(w, \epsilon/2)\)</span>.</li>
+<li>Then <span class="math">\(y\)</span> is in <span class="math">\(D(z, \epsilon)\)</span>.</li>
+<li>So for each <span class="math">\(\epsilon &gt; 0\)</span> there is a zero of <span class="math">\(f\)</span> within <span class="math">\(\epsilon\)</span> of <span class="math">\(z\)</span>.</li>
+<li>So <span class="math">\(z\)</span> would be a limit point of zeros. Contradiction.</li>
+</ul></li>
+<li>NOTE: A function <em>can</em> have infinitely many zeros. But their limit point must be outside the domain of analyticity <span class="math">\(U\)</span>.</li>
+</ul></li>
+<li>Corollary: If two functions agree on a converging sequence in a domain <span class="math">\(U\)</span>, then they must be equal throughout the domain <span class="math">\(U\)</span>.
+<ul>
+<li>Use case: An identity between analytic functions, that holds for real numbers, must also hold for complex numbers.</li>
+</ul></li>
+<li>Corollary: If <span class="math">\(f\)</span> is an entire function and <span class="math">\(f(z)\to\infty\)</span> as <span class="math">\(z\to \infty\)</span>, then <span class="math">\(f\)</span> must be a polynomial.
+<ul>
+<li>There is an <span class="math">\(M\)</span> so that <span class="math">\(|f(z) \geq 1|\)</span> for all <span class="math">\(|z|\geq M\)</span>.</li>
+<li>All zeros are restricted to <span class="math">\(D(0, M)\)</span>. So there must be finitely many of them.</li>
+<li><span class="math">\(g(z) = \frac{f(z)}{(z-a_1)(z-a_2)\cdots(z-a_n)}\)</span> is entire, and has no zeros.</li>
+<li><span class="math">\(h(z) = 1/g(z)\)</span> satisfies <span class="math">\(|h(z)|\leq A + |z|^n\)</span>. So is polynomial.</li>
+<li>But <span class="math">\(h(z)\neq 0\)</span>, so it must be constant. So <span class="math">\(f(z) = C (z-a_1)(z-a_2)\cdots(z-a_n)\)</span>.</li>
+</ul></li>
+<li>Mean Value Theorem: <span class="math">\(f(a)\)</span> equals the mean value taken around the boundary of a disc: <span class="math">\(f(a) = \frac{1}{2\pi}\int_0^{2\pi} f\left(a + re^{i\theta}\right)d\theta\)</span>
+<ul>
+<li>Follows directly by Cauchy Integral Formula.</li>
+</ul></li>
+<li>Maximum Modulus Theorem: A non-constant analytic function has no interior maximum points: For each <span class="math">\(z\in D\)</span> and <span class="math">\(\delta &gt; 0\)</span> there is a <span class="math">\(w\in D_z(\delta)\)</span> such that <span class="math">\(|f(w)| &gt; |f(z)|\)</span>.
+<ul>
+<li>From mean value theorem: <span class="math">\(|f(z)|\leq \max_\theta|f\left(z + re^{i\theta}\right)\)</span></li>
+<li>Since <span class="math">\(f\)</span> cannot be constant on any such circle, there must be a point such that <span class="math">\(|f(z)| &lt; |f(w)|\)</span>.</li>
+</ul></li>
+<li>Minimum Modulus Theorem: An interior point for an analytic function can only be a relative minimum for the modulus if it is actually <span class="math">\(0\)</span>.
+<ul>
+<li>Apply Maximum Modulus to <span class="math">\(1/f\)</span>.</li>
+</ul></li>
+</ol>
+</body>
+</html>
